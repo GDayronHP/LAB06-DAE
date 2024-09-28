@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container my-5">
+    <hr class="my-4">
+
+    <div class="text-center">
+        <h1 class="display-4 text-primary">{{ producto.categoria }}</h1>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-secondary">Nombre: <span class="fw-bold">{{ producto.nombre }}</span></h2>
+            <h2 class="text-secondary">Precio: <span class="fw-bold text-success">S/{{ producto.precio }}</span></h2>
+            <h2 class="text-secondary">Stock: <span class="fw-bold">{{ producto.stock }}</span></h2>
+            <h2 class="text-secondary">Fecha de publicación: <span class="fw-bold">{{ producto.pub_date }}</span></h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
